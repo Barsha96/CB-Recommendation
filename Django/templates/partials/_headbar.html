@@ -1,0 +1,94 @@
+{% load static %}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 d-flex justify-content-sm-start justify-content-center">
+			<a class="item" href="index.html"><img src="static/images/bookshelf.jpg" style="width:140px;"></a>
+		</div><!--1stCol-->
+		
+		<div class="col-sm-6 d-flex justify-content-sm-between justify-content-center">
+			<div class="item form-inline">
+					<div class="input-group-prepend">
+						<input id="butt" class="form-control border-y rounded-left-circle" type="text" placeholder="Books/Author">
+					</div>
+					<div class="input-group-append">
+						<button id="but" class="btn border-y border-color-danger rounded-right-circle bg-danger text-white" type="submit">
+						Search</button>
+					</div>
+			</div><!--item-->
+		</div><!--2ndCol-->
+		
+		<div class="col-sm-2 d-flex justify-content-sm-end justify-content-center mt-3">
+				<div class="item d-sm-flex justify-content-end ">
+				 	<table>
+						<tr>
+							<td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#register">Register</button>
+									<div class="modal fade" id="register">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-body">
+													<h3 class="text-center" id="trend">Register</h3>
+													<p style="color:#666666; font-size:13px;">Create your account. It's free and only takes a minute </p>
+													<hr>
+													<form>
+														<div class="container form-check">
+															<input type="text" class="form-control mb-2" placeholder="First Name">
+															<input type="text" class="form-control mb-2" placeholder="Last Name">
+															<input type="text" class="form-control mb-2" placeholder="Email">
+															<input type="text" class="form-control mb-2" placeholder="Username">
+															<input type="password" class="form-control mb-2" placeholder="Password">
+															<input type="password" class="form-control mb-2" placeholder="Retype Password">
+															
+															<p style="color:#666666; font-size:13px; text-align:center;">By signing up, you agree all the terms and conditions </p>
+															<button type="submit" class="btn btn-danger"> Sign Up </button>
+														</div>
+													</form>
+												
+										
+												</div><!-- modalBody-->
+											</div><!--modalContent-->
+										</div><!-- modalDialog -->
+									</div><!-- modalFade -->						
+							
+							</td>
+						</tr>
+					</table>	
+			    </div><!--item-->
+		</div><!--3rdCol-->
+	
+	</div> <!--row-->
+</div><!--container-->
+
+
+
+<!-------------- navbar -------------------------------.-->
+<nav class="navbar navbar-expand-sm" id="nav1">
+	<div class="container">
+		
+
+			<div class="collapse navbar-collapse" id="myNav">
+				<div class="navbar-nav">
+					<a href="index.html" class="nav-item nav-link mr-1 rounded" id="c1">Home </a>
+					<a href="Others/Sell/sell.html" class="nav-item nav-link mr-1 rounded" id="c1">Sell</a>
+					<a href="Others/Donate/donate.html" class="nav-item nav-link mr-1 rounded" id="c1">Donate</a>
+					<a href="Others/Help/help.html" class="nav-item nav-link mr-1 rounded" id="c1">Help</a>
+				</div><!--navbar-->
+			</div><!--collapse-->
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded=
+			"false" aria-label="toggle navigation">
+				 <img src="static/images/hamburger.png" style="width:8vw;">
+			</button>
+			
+			<div class="navbar-brand">
+		 	<form class="form-group pb-0 mb-0" action="afterLogin.html" >
+			  	<div class="form-check-inline  ml-1 pb-0 mb-0 pt-0 mt-0">
+					<input type="email" id="m3" class="form-control mr-1" style="width:15vw;;" placeholder="Enter email" name="email">
+					<input type="password" id="m3" class="form-control mr-1" style="width:15vw;;" placeholder="Enter password" name="pswd">
+					<button type="submit" class="btn btn-primary"> Login</button>
+				</div>
+			 </form>
+			</div>
+	
+		 
+	</div><!-- navigation bar container-->
+</nav>
